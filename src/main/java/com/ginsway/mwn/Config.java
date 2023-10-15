@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.ginsway.mwn;
 
 import java.io.File;
 

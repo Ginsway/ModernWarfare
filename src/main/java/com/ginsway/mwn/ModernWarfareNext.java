@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.ginsway.mwn;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,10 +10,10 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
-public class MyMod {
+@Mod(modid = ModernWarfareInfo.MODID, version = ModernWarfareInfo.VERSION, name = ModernWarfareInfo.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
+public class ModernWarfareNext {
 
-    public static final Logger LOG = LogManager.getLogger(Tags.MODID);
+    public static final Logger LOG = LogManager.getLogger(ModernWarfareInfo.MODID);
 
     @SidedProxy(clientSide = "com.myname.mymodid.ClientProxy", serverSide = "com.myname.mymodid.CommonProxy")
     public static CommonProxy proxy;

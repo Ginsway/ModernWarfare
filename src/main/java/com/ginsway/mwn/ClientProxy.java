@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.ginsway.mwn;
 
 public class ClientProxy extends CommonProxy {
 

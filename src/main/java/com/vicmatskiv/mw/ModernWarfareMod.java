@@ -4,6 +4,7 @@ import java.io.File;
 
 import javax.xml.transform.stream.StreamSource;
 
+import com.ginsway.mwn.ModernWarfareInfo;
 import com.vicmatskiv.weaponlib.ModContext;
 import com.vicmatskiv.weaponlib.command.BalancePackCommand;
 import com.vicmatskiv.weaponlib.command.CraftingFileCommand;
@@ -24,13 +25,13 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
-@Mod(modid = ModernWarfareMod.MODID, version = ModernWarfareMod.VERSION, guiFactory = "com.vicmatskiv.weaponlib.config.ConfigGUIFactory")
+@Mod(modid = ModernWarfareInfo.MODID, version = ModernWarfareInfo.VERSION, guiFactory = "com.vicmatskiv.weaponlib.config.ConfigGUIFactory")
 public class ModernWarfareMod {
 
 	private static final String DEFAULT_CONFIG_RESOURCE = "/mw.cfg";
     private static final String MODERN_WARFARE_CONFIG_FILE_NAME = "ModernWarfare.cfg";
-    public static final String MODID = "mw";
-	public static final String VERSION = "0.7.1";
+    //public static final String MODID = "mw";
+	//public static final String VERSION = "0.7.1";
 
     @SidedProxy(serverSide = "com.vicmatskiv.weaponlib.CommonModContext", clientSide = "com.vicmatskiv.weaponlib.ClientModContext")
     public static ModContext MOD_CONTEXT;
